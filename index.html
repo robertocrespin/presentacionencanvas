@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Tecnologías de Software</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">DevBlog</h1>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#articulos">Artículos</a>
+        <a href="#presentacion">Presentación</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="inicio" class="hero">
+      <h2>Origen y Carreras Relacionadas al Software</h2>
+      <p>Explora cómo surgió la programación, su evolución y las áreas profesionales que hacen posible la tecnología actual.</p>
+    </section>
+
+    <!-- Sección de la Presentación de Canva -->
+    <section id="presentacion" class="section">
+      <h2>Presentación Interactiva</h2>
+      <p class="section-desc">Visualiza directamente el contenido del tema a continuación:</p>
+
+      <!-- Contenedor adaptativo para iframe de Canva -->
+      <div class="canva-embed-container">
+        <iframe 
+          loading="lazy" 
+          class="canva-iframe"
+          src="imagenes/Captura de pantalla 2026-11-09 091831.png" 
+          allow="fullscreen">
+        </iframe>
+      </div>
+
+      <div class="canva-link-box">
+        <a href="https://canva.link/p07i57rbzl48t04" target="_blank" rel="noopener noreferrer" class="btn">
+          Abrir presentación en Canva ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Sección de Artículos del Blog -->
+    <section id="articulos" class="section">
+      <h2>Artículos Recientes</h2>
+      <div class="grid-posts">
+        
+        <article class="card">
+          <h3>¿Qué es el Software?</h3>
+          <p>Conjunto de instrucciones que le indican a la computadora qué tareas realizar, presente en apps, juegos y webs.</p>
+          <button class="btn-read" onclick="leerMas('post1')">Leer artículo</button>
+        </article>
+
+        <article class="card">
+          <h3>Los Primeros Pasos</h3>
+          <p>Un recorrido por el trabajo de pioneras como Ada Lovelace y los primeros algoritmos creados para máquinas.</p>
+          <button class="btn-read" onclick="leerMas('post2')">Leer artículo</button>
+        </article>
+
+        <article class="card">
+          <h3>Carreras en Tecnología</h3>
+          <p>Ingeniería de software, Ciencias de la Computación y Desarrollo: perfiles clave en la industria actual.</p>
+          <button class="btn-read" onclick="leerMas('post3')">Leer artículo</button>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Blog de Software. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/java.js"></script>
+</body>
+</html>
